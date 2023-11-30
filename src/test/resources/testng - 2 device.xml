@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Allure Test Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    </listeners>
+    <test name="Pixel">
+        <parameter name="instance" value="0"/>
+        <classes>
+            <class name="com.buylistapp.tests.buylist.BuyListTests"/>
+
+        </classes>
+    </test>
+</suite>
